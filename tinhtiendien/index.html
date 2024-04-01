@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tền điên</title>
+</head>
+<body>
+<script>
+    function TinhTienDien(){
+        let chiSoCu = prompt("nhập vào chỉ số cũ của khách hàng");
+        let chiSoMoi = prompt("nhập vào chỉ  số mới của khách hàng");
+        let B1 = 1806;// từ 0-50kWh
+        let B2 = 1866;// từ 51-100kWh
+        let B3 = 2167; // từ 101 -200kWh
+        let B4 = 2729; // từ 201 -300kWh
+        let B5 = 3050; // từ 301-400kWh
+        let B6 = 3151; // từ 400kWh trở lên
+        let PhiCoDinh = 2649;
+        let sokWhTieuThu = chiSoMoi-chiSoCu;
+        let TienDien;
+        if(sokWhTieuThu <=50){
+            TienDien = sokWhTieuThu * B1;
+        } else if(51<=sokWhTieuThu>=100){
+            TienDien = sokWhTieuThu * B2;
+        } else if(101<=sokWhTieuThu>=200){
+            TienDien = sokWhTieuThu * B3;
+        } else if(201<=sokWhTieuThu>=300){
+            TienDien = sokWhTieuThu * B4;
+        } else if(301<=sokWhTieuThu>=400){
+            TienDien = sokWhTieuThu * B5
+        } else{
+            TienDien = sokWhTieuThu * B6;
+        }
+        let ThanhTIen = TienDien + PhiCoDinh;
+        alert("Tổng số tiền khách hàng phải trả là : "+ThanhTIen+"VNĐ");
+    }
+    TinhTienDien();
+</script>
+</body>
+</html>

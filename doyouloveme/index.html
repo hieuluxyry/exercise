@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do love you me </title>
+    <script >
+        function check() {
+           alert("YES! I LOVE YOU VERY MUCH!!!!")
+        }
+        function noHover() {
+            let x = Math.round( Math.random()*window.innerWidth);
+            let y= Math.round(Math.random()*window.innerHeight);
+            document.getElementById('No').style.left = x+'px';
+            document.getElementById('No').style.top = y+'px';
+        }
+    </script>
+</head>
+<body>
+<h1 style="position: absolute;left:200px; top:175px; color: red;">Do you love me?</h1>
+<input type="button" value="YES" onclick="check()" style="position: absolute;left: 240px;top: 180px; color: red;">
+<input type="button" value="NO" id="No" onmouseover="noHover()" style="position: absolute;left: 360px;top: 180px; color: black;">
+</body>
+</html>
