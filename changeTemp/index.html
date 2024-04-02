@@ -7,15 +7,17 @@
   <body>
     <form>
       <p>
-        <label>Fahrenheit</label>
-        <input
+        <label style="font-size: 50px;">Fahrenheit</label>
+        <input style="font-size: 50px;"
           id="inputFahrenheit"
           type="number"
           placeholder="Fahrenheit"
           oninput="temperatureConverter(this.value, 'fahrenheit')"
           onchange="temperatureConverter(this.value, 'fahrenheit')"
         />
-        <input
+  
+
+        <input style="font-size: 50px; "
           id="inputCelsius"
           type="number"
           placeholder="Celsius"
@@ -23,10 +25,9 @@
           onchange="temperatureConverter(this.value, 'celsius')"
         />
       </p>
-      <p>Celsius: <span id="outputCelsius"></span></p>
-      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+      <p style="font-size: 50px;">Celsius: <span id="outputCelsius"></span></p>
+      <pstyle="font-size: 50px;>Fahrenheit: <span id="outputFahrenheit"></span></p>
     </form>
-
     <script src="script.js"></script>
   </body>
 </html>
