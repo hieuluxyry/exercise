@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeetToMeet</title>
+</head>
+<body>
+    <input type="number" id="inputNumber" style="font-size: 50px;">
+    <select name="" id="conversionType"  style="font-size: 40px;">
+     <option value="feetToMeets">Feet to Meters</option>
+     <option value="metersToFeet">Meters to Feet</option>
+    </select>
+    <button onclick="convert()" style="font-size: 50px;">
+   Convert
+    </button>
+    <p id="result"></p>
+ 
+   <script>
+     function feetToMeets(number) {
+       return 0.305 * number;
+     }
+     function metersToFeet(number) {
+       return 3.279 * number;
+     }
+ 
+     function convert() {
+       let number = document.querySelector("#inputNumber").value;
+       let conversionType = document.querySelector("#conversionType").value;
+       let result;
+       if (conversionType === "feetToMeets") {
+         result = feetToMeets(number);
+       } else if (conversionType === "metersToFeet") {
+         result = metersToFeet(number);
+       }
+       document.querySelector("#result").textContent = result;
+     }
+   </script>
+</body>
+</html>
