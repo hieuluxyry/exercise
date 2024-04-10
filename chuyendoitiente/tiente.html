@@ -5,17 +5,17 @@
     <title>Chuyển đổi tiền tệ</title>
 </head>
 <body>
-<table>
+<table style="border: 30px;  color: red; background-color: pink;">
     <tr>
-        <th><label for="Amount">Amount</label></th>
-        <th>From Currency</th>
-        <th>To Currency</th>
+        <th style="font-size: 20px;"><label for="Amount">Amount</label></th>
+        <th style="font-size: 20px; ">From Currency</th>
+        <th style="font-size: 20px; ">To Currency</th>
 
     </tr>
     <tr>
-        <td><input type="text" id="Amount"></td>
+        <td style="font-size: 20px;"><input type="text" id="Amount"></td>
         <td>
-            <select id="From">
+            <select id="From" style="font-size: 20px;" >
                 <option value="VND">VND</option>
                 <option value="USD">USD</option>
                 <option value="JPY">JPY</option>
@@ -23,14 +23,14 @@
             </select>
         </td>
         <td>
-            <select id="To">
+            <select id="To" style="font-size: 20px;">
                 <option value="VND">VND</option>
                 <option  value="USD">USD</option>
                 <option value="JPY">JPY</option>
                 <option value="PHP">PHP</option>
             </select>
         </td>
-        <td><button onclick="ChangeMoney()">Convert</button></td>
+        <td style="font-size: 20px;"><button onclick="ChangeMoney()">Convert</button></td>
     </tr>
 </table>
 
