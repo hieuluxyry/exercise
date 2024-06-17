@@ -1,4 +1,4 @@
-// mot so cach lay input dau vao
+
 function plus(){
     let c = document.getElementById("a").value;
     let d = document.getElementById("b").value;
